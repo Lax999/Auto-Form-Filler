@@ -1,0 +1,67 @@
+.navdiv{
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px; /* Adjust height as needed */
+        background-color: rgb(48, 140, 71); /* Example background color */
+        z-index: 1100; /* Ensure it's on top of other content */
+        max-height: 65px;
+    }
+    
+    .navbar{
+    background: rgb(48, 140, 71); 
+    padding-right: 15px; 
+    padding-left: 15px;
+    
+    }
+    
+    .navbar a{
+      font-size: 23px;
+      font-family: Arial, sans-serif;
+        color: white;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        font-size: 20px;
+      }
+    
+      .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+      
+      }
+    
+    .navbar ul li ::after{
+    
+        content:'';
+        height: 3px;
+        width: 0%;
+        background: rgb(250, 255, 250);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+      }
+      
+    .navbar ul li :hover::after{
+        width: 80%;
+      }
+    .logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    }
